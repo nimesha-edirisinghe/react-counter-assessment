@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Counter.css';
 
-const Counter: React.FC = () => {
+interface CounterProps {}
+
+const Counter: React.FC<CounterProps> = () => {
   const [count, setCount] = useState<number>(0);
   const maxLimit = 10; // Maximum limit for the counter
 
